@@ -33,7 +33,7 @@ spec:
       nodeSelector:
         zone: us-east-1a
       volumes:
-        - name: vprodb-db-data
+         - name: vprodb-db-data
            awsElasticBlockstore:
                volumeID: vol-0c29ec7211cd36f2f
                fsType: ext4
