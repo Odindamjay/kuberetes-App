@@ -22,12 +22,12 @@ spec:
                - name: vprodb-db-data
                  mountPath: /var/lib/mysql
           
-           env:
-            - name: MYSQL_ROOT_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: app-secret
-                  key: db-pass
+            env:
+             - name: MYSQL_ROOT_PASSWORD
+               valueFrom:
+                 secretKeyRef:
+                   name: app-secret
+                   key: db-pass
 
            ports:
             - name: vprodb-port
