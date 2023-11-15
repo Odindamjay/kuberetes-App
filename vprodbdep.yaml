@@ -13,11 +13,11 @@ spec:
     metadata:
       labels:
         app: vprodb
-   spec:
+    spec:
      containers:
         - name: vprodb
           image: damjay/vprofiledb:V1
-
+ 
           volumeMounts:
                - name: vprodb-db-data
                  mountPath: /var/lib/mysql
