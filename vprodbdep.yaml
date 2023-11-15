@@ -21,7 +21,7 @@ spec:
           volumeMounts:
                - name: vprodb-db-data
                  mountPath: /var/lib/mysql
-            env:
+           env:
              - name: MYSQL_ROOT_PASSWORD
                valueFrom:
                  secretKeyRef:
